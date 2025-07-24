@@ -26,9 +26,9 @@ try:
         model="ehcalabres/wav2vec2-lg-xlsr-en-speech-emotion-recognition",
         device=0 if torch.cuda.is_available() else -1
     )
-    print("✅ Emotion model loaded successfully!")
+    print(" Emotion model loaded successfully!")
 except Exception as e:
-    print(f"❌ Error loading model: {e}")
+    print(f" Error loading model: {e}")
 
 def analyze_emotion_simple(audio_file):
     try:
